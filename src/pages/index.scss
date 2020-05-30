@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$desktop: 1024px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+*,
+body,
+h1,
+h3 {
+  font-family: "Roboto", "sans-serif";
+  font-weight: lighter;
+}
+button {
+  cursor: pointer;
+}
+
+#landingPage {
+  color: white;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/static/h1-736be5d01e1d62566744ab24c5c1d152.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-direction: row;
+  }
+}
+#bottomSocialBar {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  button {
+    margin: 1rem 0.5rem;
+  }
+  @include desktop {
+    align-self: flex-end;
+  }
+}
+#landingContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  @include desktop {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem;
+  }
+  #headlineText {
+    h1,
+    h3 {
+      margin: 0;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    button {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      font-size: 2rem;
+      padding: 0.7rem 1rem;
+      margin-top: 1rem;
+      border-radius: 0.3rem;
+    }
+    @include desktop {
+      line-height: 1.2;
+      button {
+        padding: 0.5rem 1rem;
+      }
+      h1 {
+        font-size: 5rem;
+      }
+      h3 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+#projectsContainer {
+  padding: 0 2rem;
+  text-align: center;
+  #projectHeader {
+    h1 {
+      font-size: 3rem;
+      margin: 2rem 0 0.5rem 0;
+    }
+    hr {
+      margin: 0 6rem 4rem 6rem;
+    }
+    @include desktop {
+      hr {
+        width: 8%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
+#about {
+  padding: 0 2rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  hr {
+    margin: 0 6rem 2rem 6rem;
+  }
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  @include desktop {
+    hr {
+      width: 8%;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+  }
+}
