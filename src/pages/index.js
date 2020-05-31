@@ -119,7 +119,7 @@ const IndexPage = () => {
         </div>
         <div id="projectList">
           <Project
-            title="Macros-Social Media App"
+            title="Macros"
             img={data.allFile.edges[5].node.childImageSharp.fluid}
             tech="HTML | CSS | TypeScript | Next js/ React js | Context API | Node js | MongoDB"
             description="A web application that lets users create, find, and share macro-friendly meals with friends. Creating a food post lets a user upload an image as well as the ability to search a food database for ingredients to easily attach nutrition values to the post. Use email: test@gmail.com and password: 12345678 as a test account. Mobile-first design patterns."
@@ -137,7 +137,7 @@ const IndexPage = () => {
             side="right"
           />
           <Project
-            title="Phonelab-Ecommerce App"
+            title="Phonelab"
             img={data.allFile.edges[1].node.childImageSharp.fluid}
             tech="HTML | CSS/SASS | Javascript | React js/ Redux | Node js/ Express js | PostgreSQL"
             description="A web application that lets customers shop and purchase smartphone and smartphone accessories. Customers will create accounts, manage addresses and payment options, edit their shopping carts, complete orders and manage their account. Use email:test and password: abc as a test account. Mobile-first design patterns."
