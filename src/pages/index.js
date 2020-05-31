@@ -119,7 +119,7 @@ const IndexPage = () => {
         <div id="projectList">
           <Project
             title="Macros-Social Media App"
-            img={data.allFile.edges[2].node.childImageSharp.fluid}
+            img={data.allFile.edges[4].node.childImageSharp.fluid}
             tech="HTML | CSS | TypeScript | Next js/ React js | Context API | Node js | MongoDB"
             description="A web application that lets users create, find, and share macro-friendly meals with friends. Creating a food post lets a user upload an image as well as the ability to search a food database for ingredients to easily attach nutrition values to the post. Use email: test@gmail.com and password: 12345678 as a test account. Mobile-first design patterns."
             codeLink="https://github.com/mcdanije22/macros"
@@ -137,7 +137,7 @@ const IndexPage = () => {
           />
           <Project
             title="Phonelab-Ecommerce App"
-            img={data.allFile.edges[0].node.childImageSharp.fluid}
+            img={data.allFile.edges[1].node.childImageSharp.fluid}
             tech="HTML | CSS/SASS | Javascript | React js/ Redux | Node js/ Express js | PostgreSQL"
             description="A web application that lets customers shop and purchase smartphone and smartphone accessories. Customers will create accounts, manage addresses and payment options, edit their shopping carts, complete orders and manage their account. Use email:test and password: abc as a test account. Mobile-first design patterns."
             codeLink="https://github.com/mcdanije22/ecommerce_phones"
@@ -146,7 +146,7 @@ const IndexPage = () => {
           />
           <Project
             title="Contacts"
-            img={data.allFile.edges[1].node.childImageSharp.fluid}
+            img={data.allFile.edges[2].node.childImageSharp.fluid}
             tech="HTML | CSS/SASS | Javascript | React | localstorage"
             description="A web application that lets users create, edit and delete contacts from their contact list. The contact list is carried from session to session after reloads utilizing user's local storage. Users can star their favorite contacts and quickly search for specific contacts. Mobile-first design patterns."
             codeLink="https://github.com/mcdanije22/new_contact_app'"
