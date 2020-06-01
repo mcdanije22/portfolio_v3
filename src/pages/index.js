@@ -29,6 +29,7 @@ const IndexPage = () => {
       }
     }
   `)
+  console.log(data)
   return (
     <Layout>
       <SEO title="Josh McDaniel" />
@@ -119,7 +120,7 @@ const IndexPage = () => {
         <div id="projectList">
           <Project
             title="Macros"
-            img={data.allFile.edges[5].node.childImageSharp.fluid}
+            img={data.allFile.edges[4].node.childImageSharp.fluid}
             tech="HTML | CSS | TypeScript | Next js/ React js | Context API | Node js | MongoDB"
             description="A web application that lets users create, find, and share macro-friendly meals with friends. Creating a food post lets a user upload an image as well as the ability to search a food database for ingredients to easily attach nutrition values to the post. Use email: test@gmail.com and password: 12345678 as a test account. Mobile-first design patterns."
             codeLink="https://github.com/mcdanije22/macros"
@@ -128,7 +129,7 @@ const IndexPage = () => {
           />
           <Project
             title="The Nerd Store"
-            img={data.allFile.edges[4].node.childImageSharp.fluid}
+            img={data.allFile.edges[5].node.childImageSharp.fluid}
             tech="HTML | CSS/SASS | Javascript | React js | Gatsby Js | GraphQL | Headless CMS"
             description="A web application that was created to be highly responsive, fast and optimized for SEO using Gatsby js. This was utilized to increase the traffic of a local gaming shop. Created using a headless cms, Contentful, for easy event editing and focusing on quick user accessibility. Provided users with access to shop event info, twitter announcements, photos, and contact/message abilities. Mobile-first design patterns."
             codeLink="https://github.com/mcdanije22/nerd_store"
@@ -155,7 +156,12 @@ const IndexPage = () => {
           />
         </div>
       </div>
-      <div id="about">
+      <div
+        id="about"
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+      >
         <h1>About me</h1>
         <hr />
         <h3>Josh McDaniel</h3>

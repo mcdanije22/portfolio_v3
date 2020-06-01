@@ -12,7 +12,12 @@ const Project = ({
   side,
 }) => {
   return (
-    <div className="projectContainer">
+    <div
+      className="projectContainer"
+      data-sal="slide-down"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+    >
       <div
         className="leftSide"
         className={side === "right" ? "leftSideOrder" : "rightSideOrder"}
