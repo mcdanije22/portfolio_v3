@@ -17,6 +17,7 @@ const Project = ({
       data-sal="slide-down"
       data-sal-delay="200"
       data-sal-easing="ease"
+      data-sal-duration="1000"
     >
       <div
         className="leftSide"
