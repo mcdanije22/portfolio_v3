@@ -53,7 +53,8 @@ const IndexPage = () => {
           <ul id="bottomSocialBar">
             <li className="socialItem">
               <a href="mailto:mcdanije22@gmail.com?Subject=Hello%20again">
-                <button
+                <div
+                  className="socialOption"
                   type="submit"
                   style={{
                     borderRadius: "2.5rem",
@@ -74,12 +75,13 @@ const IndexPage = () => {
                       verticalAlign: "middle",
                     }}
                   />
-                </button>
+                </div>
               </a>
             </li>
             <li className="socialItem">
               <a href="https://github.com/mcdanije22" target="_blank">
-                <button
+                <div
+                  className="socialOption"
                   type="submit"
                   style={{
                     borderRadius: "2.5rem",
@@ -99,12 +101,13 @@ const IndexPage = () => {
                       verticalAlign: "middle",
                     }}
                   />
-                </button>
+                </div>
               </a>
             </li>
             <li className="socialItem">
               <a href="https://www.linkedin.com/in/mcdanije/" target="_blank">
-                <button
+                <div
+                  className="socialOption"
                   type="submit"
                   style={{
                     borderRadius: "2.5rem",
@@ -124,7 +127,7 @@ const IndexPage = () => {
                       verticalAlign: "middle",
                     }}
                   />
-                </button>
+                </div>
               </a>
             </li>
           </ul>
