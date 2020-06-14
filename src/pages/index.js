@@ -20,7 +20,7 @@ const IndexPage = () => {
           node {
             base
             childImageSharp {
-              fluid {
+              fluid(quality: 90, maxWidth: 1920) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -30,88 +30,89 @@ const IndexPage = () => {
     }
   `)
   console.log(data)
+
   return (
     <Layout>
       <SEO title="Josh McDaniel" />
-      <BackgroundImage fluid={data.allFile.edges[3].node.childImageSharp.fluid}>
-        <div id="landingPage">
-          <div id="landingContent">
-            <div id="headlineText">
-              <h1>Hi,</h1>
-              <h1>
-                I'm <span style={{ color: "#ff4b36" }}>Josh</span>
-              </h1>
-              <h3>Full-Stack Developer</h3>
-              <a
-                href="https://drive.google.com/file/d/11uWDnXEIVM3N3JeBbtLdgKeDbF-ZlQ9z/view"
-                target="_blank"
-              >
-                <button type="submit">Resume</button>
-              </a>
-            </div>
-            <ul id="bottomSocialBar">
-              <li className="socialItem">
-                <a href="mailto:mcdanije22@gmail.com?Subject=Hello%20again">
-                  <button
-                    type="submit"
-                    style={{
-                      borderRadius: "2.5rem",
-                      width: "2.5rem",
-                      height: "2.5rem",
-                      lineHeight: "2.3rem",
-                      backgroundColor: "transparent",
-                      color: "white",
-                      textAlign: "center",
-                      border: "1px solid white",
-                      marginLeft: "0",
-                    }}
-                  >
-                    <MailOutlined />
-                  </button>
-                </a>
-              </li>
-              <li className="socialItem">
-                <a href="https://github.com/mcdanije22" target="_blank">
-                  <button
-                    type="submit"
-                    style={{
-                      borderRadius: "2.5rem",
-                      width: "2.5rem",
-                      height: "2.5rem",
-                      lineHeight: "2.3rem",
-                      backgroundColor: "transparent",
-                      color: "white",
-                      textAlign: "center",
-                      border: "1px solid white",
-                    }}
-                  >
-                    <GithubOutlined />
-                  </button>
-                </a>
-              </li>
-              <li className="socialItem">
-                <a href="https://www.linkedin.com/in/mcdanije/" target="_blank">
-                  <button
-                    type="submit"
-                    style={{
-                      borderRadius: "2.5rem",
-                      width: "2.5rem",
-                      height: "2.5rem",
-                      lineHeight: "2.3rem",
-                      backgroundColor: "transparent",
-                      color: "white",
-                      textAlign: "center",
-                      border: "1px solid white",
-                    }}
-                  >
-                    <LinkedinOutlined />
-                  </button>
-                </a>
-              </li>
-            </ul>
+      {/* <BackgroundImage fluid={data.allFile.edges[3].node.childImageSharp.fluid}> */}
+      <div id="landingPage">
+        <div id="landingContent">
+          <div id="headlineText">
+            <h1>Hi,</h1>
+            <h1>
+              I'm <span style={{ color: "#ff4b36" }}>Josh</span>
+            </h1>
+            <h3>Full-Stack Developer</h3>
+            <a
+              href="https://drive.google.com/file/d/11uWDnXEIVM3N3JeBbtLdgKeDbF-ZlQ9z/view"
+              target="_blank"
+            >
+              <button type="submit">Resume</button>
+            </a>
           </div>
+          <ul id="bottomSocialBar">
+            <li className="socialItem">
+              <a href="mailto:mcdanije22@gmail.com?Subject=Hello%20again">
+                <button
+                  type="submit"
+                  style={{
+                    borderRadius: "2.5rem",
+                    width: "2.5rem",
+                    height: "2.5rem",
+                    lineHeight: "2.3rem",
+                    backgroundColor: "transparent",
+                    color: "white",
+                    textAlign: "center",
+                    border: "1px solid white",
+                    marginLeft: "0",
+                  }}
+                >
+                  <MailOutlined />
+                </button>
+              </a>
+            </li>
+            <li className="socialItem">
+              <a href="https://github.com/mcdanije22" target="_blank">
+                <button
+                  type="submit"
+                  style={{
+                    borderRadius: "2.5rem",
+                    width: "2.5rem",
+                    height: "2.5rem",
+                    lineHeight: "2.3rem",
+                    backgroundColor: "transparent",
+                    color: "white",
+                    textAlign: "center",
+                    border: "1px solid white",
+                  }}
+                >
+                  <GithubOutlined />
+                </button>
+              </a>
+            </li>
+            <li className="socialItem">
+              <a href="https://www.linkedin.com/in/mcdanije/" target="_blank">
+                <button
+                  type="submit"
+                  style={{
+                    borderRadius: "2.5rem",
+                    width: "2.5rem",
+                    height: "2.5rem",
+                    lineHeight: "2.3rem",
+                    backgroundColor: "transparent",
+                    color: "white",
+                    textAlign: "center",
+                    border: "1px solid white",
+                  }}
+                >
+                  <LinkedinOutlined />
+                </button>
+              </a>
+            </li>
+          </ul>
         </div>
-      </BackgroundImage>
+      </div>
+      {/* </BackgroundImage> */}
       <div id="projectsContainer">
         <div id="projectHeader">
           <h1>Projects</h1>
