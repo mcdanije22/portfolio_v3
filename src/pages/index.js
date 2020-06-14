@@ -67,7 +67,13 @@ const IndexPage = () => {
                     marginLeft: "0",
                   }}
                 >
-                  <MailOutlined />
+                  <MailOutlined
+                    style={{
+                      textAlign: "center",
+                      display: "inline-block",
+                      verticalAlign: "middle",
+                    }}
+                  />
                 </button>
               </a>
             </li>
@@ -86,7 +92,13 @@ const IndexPage = () => {
                     border: "1px solid white",
                   }}
                 >
-                  <GithubOutlined />
+                  <GithubOutlined
+                    style={{
+                      textAlign: "center",
+                      display: "inline-block",
+                      verticalAlign: "middle",
+                    }}
+                  />
                 </button>
               </a>
             </li>
@@ -105,7 +117,13 @@ const IndexPage = () => {
                     border: "1px solid white",
                   }}
                 >
-                  <LinkedinOutlined />
+                  <LinkedinOutlined
+                    style={{
+                      textAlign: "center",
+                      display: "inline-block",
+                      verticalAlign: "middle",
+                    }}
+                  />
                 </button>
               </a>
             </li>
