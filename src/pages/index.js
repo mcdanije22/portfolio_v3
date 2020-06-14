@@ -71,6 +71,7 @@ const IndexPage = () => {
                     style={{
                       textAlign: "center",
                       display: "inline-block",
+                      verticalAlign: "middle",
                     }}
                   />
                 </button>
@@ -95,6 +96,7 @@ const IndexPage = () => {
                     style={{
                       textAlign: "center",
                       display: "inline-block",
+                      verticalAlign: "middle",
                     }}
                   />
                 </button>
@@ -119,6 +121,7 @@ const IndexPage = () => {
                     style={{
                       textAlign: "center",
                       display: "inline-block",
+                      verticalAlign: "middle",
                     }}
                   />
                 </button>
