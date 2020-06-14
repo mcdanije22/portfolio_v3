@@ -6,6 +6,10 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Darker Grotesque`, "Roboto"],
+      },
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
         threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
