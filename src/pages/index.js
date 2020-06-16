@@ -29,7 +29,7 @@ const IndexPage = () => {
       }
     }
   `)
-  console.log(data)
+  console.log("test", data)
 
   return (
     <Layout>
