@@ -18,35 +18,35 @@ const IndexPage = () => {
     query {
       landing_image: file(relativePath: { eq: "landing_image.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       macros: file(relativePath: { eq: "macros.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       nerd_store: file(relativePath: { eq: "nerd_store.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       phone_lab: file(relativePath: { eq: "phone_lab.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       contacts: file(relativePath: { eq: "contacts.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -211,7 +211,7 @@ const IndexPage = () => {
         data-sal="slide-up"
         data-sal-delay="300"
         data-sal-easing="ease"
-        data-sal-duration="1000"
+        data-sal-duration="900"
       >
         <h1>About me</h1>
         <hr />
