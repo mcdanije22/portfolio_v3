@@ -51,6 +51,13 @@ const IndexPage = () => {
           }
         }
       }
+      turtle_leaf: file(relativePath: { eq: "turtle_leaf.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   console.log("test", data)
@@ -175,6 +182,15 @@ const IndexPage = () => {
             description="A web application that lets users create, find, and share macro-friendly meals with friends. Creating a food post lets a user upload an image as well as the ability to search a food database for ingredients to easily attach nutrition values to the post. Use email: test@gmail.com and password: 12345678 as a test account. Mobile-first design patterns."
             codeLink="https://github.com/mcdanije22/macros"
             liveLink="https://macros-social.herokuapp.com/"
+            side="left"
+          />
+          <Project
+            title="Turtle Leaf Cafe"
+            img={data.turtle_leaf.childImageSharp.fluid}
+            tech="HTML | CSS/SASS | Javascript | React js | Gatsby Js | GraphQL | Markdown"
+            description="A web application that lets users create, find, and share macro-friendly meals with friends. Creating a food post lets a user upload an image as well as the ability to search a food database for ingredients to easily attach nutrition values to the post. Use email: test@gmail.com and password: 12345678 as a test account. Mobile-first design patterns."
+            codeLink="https://github.com/mcdanije22/turtle_leaf"
+            liveLink="https://cocky-chandrasekhar-6305e3.netlify.app/"
             side="left"
           />
           <Project
