@@ -1,17 +1,18 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Project from "../components/Project/Project"
-import "./index.scss"
+import "./pageStyles/index.scss"
 import {
   MailOutlined,
   GithubOutlined,
   LinkedinOutlined,
+  ArrowRightOutlined,
 } from "@ant-design/icons"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundImage from "gatsby-background-image"
 import Img from "gatsby-image"
+import Link from "gatsby-Link"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -76,17 +77,25 @@ const IndexPage = () => {
       >
         <div id="landingContent">
           <div id="headlineText">
-            <h1>Hi,</h1>
-            <h1>
-              I'm <span style={{ color: "#ff4b36" }}>Josh</span>
-            </h1>
-            <h3>Full-Stack Developer</h3>
-            <a
-              href="https://drive.google.com/file/d/11uWDnXEIVM3N3JeBbtLdgKeDbF-ZlQ9z/view"
-              target="_blank"
-            >
-              <button type="submit">Resume</button>
-            </a>
+            <div id="leftSideHero">
+              <h1>Hi,</h1>
+              <h1>
+                I'm <span style={{ color: "#ff4b36" }}>Josh</span>
+              </h1>
+              <h3>Full-Stack Developer</h3>
+              <a
+                href="https://drive.google.com/file/d/11uWDnXEIVM3N3JeBbtLdgKeDbF-ZlQ9z/view"
+                target="_blank"
+              >
+                <button type="submit">Resume</button>
+              </a>
+            </div>
+            <div id="rightSideHero">
+              <h3>Blog</h3>
+              <Link to="/">
+                <ArrowRightOutlined />
+              </Link>
+            </div>
           </div>
           <ul id="bottomSocialBar">
             <li className="socialItem">
