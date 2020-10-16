@@ -1,0 +1,25 @@
+$desktop: 1024px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+.blogPostContainer {
+  max-width: 500px;
+  margin: 0 auto;
+  margin: 2rem 0;
+}
+@include desktop {
+  #blogPageContainer {
+    margin: 2rem 0 0 1rem;
+  }
+  .blogPostContainer {
+    max-width: 800px;
+    .blogPostContent {
+      font-size: 1rem;
+    }
+  }
+  .blogSideBar {
+    margin-top: 2rem;
+  }
+}

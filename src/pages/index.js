@@ -12,7 +12,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundImage from "gatsby-background-image"
 import Img from "gatsby-image"
-import Link from "gatsby-Link"
+import { Link } from "gatsby"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -63,8 +63,9 @@ const IndexPage = () => {
   `)
   console.log("test", data)
   return (
-    <Layout>
-      <SEO title="Josh McDaniel" />
+    <>
+      {/* <Layout>
+      <SEO title="Josh McDaniel" /> */}
       {/* <BackgroundImage fluid={data.allFile.edges[3].node.childImageSharp.fluid}> */}
       <div
         id="landingPage"
@@ -92,7 +93,7 @@ const IndexPage = () => {
             </div>
             <div id="rightSideHero">
               <h3>Blog</h3>
-              <Link to="/">
+              <Link to="/blog">
                 <ArrowRightOutlined />
               </Link>
             </div>
@@ -249,7 +250,8 @@ const IndexPage = () => {
           develop my skill set.
         </p>
       </div>
-    </Layout>
+      {/* </Layout> */}
+    </>
   )
 }
 

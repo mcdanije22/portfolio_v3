@@ -8,6 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Footer from "../components/footer/Footer"
+import MobileNav from "./navBar/MobileNav"
+import DesktopNav from "./navBar/DesktopNav"
 
 import "./layout.css"
 
@@ -25,16 +28,13 @@ const Layout = ({ children }) => {
   return (
     <>
       <div>
+        <nav>
+          <MobileNav />
+          <DesktopNav />
+        </nav>
         <main>{children}</main>
-        <footer
-          style={{
-            textAlign: "center",
-            backgroundColor: "#ff4b36",
-            padding: "1rem",
-            color: "white",
-          }}
-        >
-          © {new Date().getFullYear()}, Built by Josh McDaniel
+        <footer>
+          <Footer />
         </footer>
       </div>
     </>
