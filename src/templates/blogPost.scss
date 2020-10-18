@@ -8,6 +8,9 @@ $desktop: 1024px;
   max-width: 500px;
   margin: 0 auto;
   margin: 2rem 0;
+  .blogPostContent {
+    margin: 1rem 0;
+  }
 }
 @include desktop {
   #blogPageContainer {

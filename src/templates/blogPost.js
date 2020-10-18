@@ -14,7 +14,7 @@ export default function Template({ data }) {
 
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title={frontmatter.title} />
       <Row justify="center">
         <Col xs={24} lg={12}>
           <div id="blogPageContainer">

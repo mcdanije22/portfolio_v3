@@ -64,6 +64,7 @@ const IndexPage = () => {
   console.log("test", data)
   return (
     <>
+      <SEO title="Josh McDaniel" />
       {/* <Layout>
       <SEO title="Josh McDaniel" /> */}
       {/* <BackgroundImage fluid={data.allFile.edges[3].node.childImageSharp.fluid}> */}

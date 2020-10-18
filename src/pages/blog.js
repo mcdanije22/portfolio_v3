@@ -7,6 +7,7 @@ import PostList from "../components/PostList/PostList"
 import Footer from "../components/footer/Footer"
 import MobileNav from "../components/navBar/MobileNav"
 import DesktopNav from "../components/navBar/DesktopNav"
+import SEO from "../components/seo"
 
 const { Search } = Input
 
@@ -35,6 +36,7 @@ const Blog = () => {
   `)
   return (
     <div id="landingPageContainer">
+      <SEO title="Web Developer blog" />
       <div id="landingHeader">
         <nav>
           <MobileNav />
@@ -70,7 +72,7 @@ const Blog = () => {
             <div id="blogContainer" className="container">
               <h1>Recently Posted</h1>
               <PostList blogPosts={blogPosts.allMarkdownRemark.edges} />
-              <Link to="/blog">
+              <Link to="/bloglist">
                 <h4 id="viewAllOption">View all</h4>
               </Link>
             </div>
@@ -112,7 +114,9 @@ const Blog = () => {
           <Col xs={{ span: 24 }} lg={{ span: 16 }}>
             <div id="newsletterSection" className="container">
               <h1>Get Notified</h1>
-              <p>Join the Newsletter for Exclusive content </p>
+              <label>
+                <p>Join the Newsletter for Exclusive content </p>
+              </label>
               <Search
                 placeholder="Enter Email Address"
                 enterButton="Subscribe"
