@@ -15,7 +15,7 @@ const DesktopNav = () => {
         <Col xs={{ span: 24 }} lg={{ span: 8 }}>
           <ul className="navGroup">
             <li>
-              <Link to="/">Code Along</Link>
+              <Link to="/blog">Home</Link>
             </li>
             <li>
               <Link to="/bloglist">Posts</Link>
@@ -38,19 +38,19 @@ const DesktopNav = () => {
         <Col xs={{ span: 24 }} lg={{ span: 4 }}>
           <ul className="navGroup" style={{ justifyContent: "flex-end" }}>
             <li className="social">
-              <Link to="/">
+              <a href="https://twitter.com/josh_mcdaniel1" target="_blank">
                 <TwitterOutlined />
-              </Link>
+              </a>
             </li>
             <li className="social">
-              <Link to="/">
+              <a href="https://github.com/mcdanije22" target="_blank">
                 <GithubOutlined />
-              </Link>
+              </a>
             </li>
             <li className="social">
-              <Link to="/">
+              <a href="https://www.linkedin.com/in/mcdanije/" target="_blank">
                 <LinkedinOutlined />
-              </Link>
+              </a>
             </li>
           </ul>
         </Col>

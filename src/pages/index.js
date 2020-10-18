@@ -91,7 +91,7 @@ const IndexPage = () => {
                 <button type="submit">Resume</button>
               </a>
             </div>
-            <div id="rightSideHero">
+            <div id="rightSideHero" style={{ display: "none" }}>
               <h3>Blog</h3>
               <Link to="/blog">
                 <ArrowRightOutlined />
