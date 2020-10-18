@@ -14,21 +14,24 @@ const DesktopNav = () => {
       <Row justify="center">
         <Col xs={{ span: 24 }} lg={{ span: 8 }}>
           <ul className="navGroup">
-            <Link to="/">
-              <li>Code Along</li>
-            </Link>
-            <Link to="/blog">
-              <li>Posts</li>
-            </Link>
-            <Link to="/tips">
-              <li>Tips</li>
-            </Link>
-            <Link to="/">
-              <li>Portfolio</li>
-            </Link>
-            <Link to="/about">
-              <li>About</li>
-            </Link>
+            <li>
+              <Link to="/">Code Along</Link>
+            </li>
+            <li>
+              <Link to="/bloglist">Posts</Link>
+            </li>
+            <li>
+              <Link to="/Snippets">Snippets</Link>
+            </li>
+            <li>
+              <Link to="/">Portfolio</Link>
+            </li>
+            <li>
+              <Link to="/">About</Link>
+            </li>
+            <li>
+              <Link to="/">Subscribe</Link>
+            </li>
           </ul>
         </Col>
         <Col xs={{ span: 0 }} lg={{ span: 4 }}></Col>

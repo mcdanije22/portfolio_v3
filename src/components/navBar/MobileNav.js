@@ -3,6 +3,11 @@ import { MenuOutlined, CloseOutlined } from "@ant-design/icons"
 import { Button, Drawer } from "antd"
 import { Link } from "gatsby"
 import "./MobileNav.scss"
+import {
+  TwitterOutlined,
+  GithubOutlined,
+  LinkedinOutlined,
+} from "@ant-design/icons"
 
 const MobileNav = () => {
   const [visible, setVisible] = useState(false)
@@ -55,13 +60,13 @@ const MobileNav = () => {
           </ul>
           <ul id="drawerVerticalMenu">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/blog">Home</Link>
             </li>
             <li>
-              <Link to="/">Posts</Link>
+              <Link to="/bloglist">Posts</Link>
             </li>
             <li>
-              <Link to="/">Tips</Link>
+              <Link to="/Snippets">Snippets</Link>
             </li>
             <li>
               <Link to="/">Portfolio</Link>
@@ -71,6 +76,25 @@ const MobileNav = () => {
             </li>
             <li>
               <Link to="/">Subscribe</Link>
+            </li>
+            <li>
+              <ul id="mobileSocialList">
+                <li className="social">
+                  <Link to="/">
+                    <TwitterOutlined />
+                  </Link>
+                </li>
+                <li className="social">
+                  <Link to="/">
+                    <GithubOutlined />
+                  </Link>
+                </li>
+                <li className="social">
+                  <Link to="/">
+                    <LinkedinOutlined />
+                  </Link>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

@@ -60,6 +60,14 @@ $desktop: 1024px;
     }
   }
 }
+#mobileSocialList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  li {
+    padding-right: 1rem;
+  }
+}
 @include desktop {
   #mobileNavContainer {
     display: none;

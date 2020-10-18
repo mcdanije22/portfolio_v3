@@ -251,6 +251,9 @@ const IndexPage = () => {
         </p>
       </div>
       {/* </Layout> */}
+      <div id="portfolioFooter">
+        <p>© {new Date().getFullYear()}, built by Josh McDaniel</p>
+      </div>
     </>
   )
 }

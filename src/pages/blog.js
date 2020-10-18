@@ -55,7 +55,7 @@ const Blog = () => {
           ></path>
         </svg>
       </div>
-      <main style={{ height: "auto" }}>
+      <main style={{ minHeight: "100vh" }}>
         <Row justify="center">
           <Col xs={{ span: 24 }} lg={{ span: 8 }}>
             {/* <div id="projectsContainer" className="container">

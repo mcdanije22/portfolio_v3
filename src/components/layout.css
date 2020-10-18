@@ -5,7 +5,7 @@ html {
 }
 main {
   margin: 0 1rem 4rem 1rem;
-  height: auto;
+  min-height: 100vh;
 }
 body {
   margin: 0;

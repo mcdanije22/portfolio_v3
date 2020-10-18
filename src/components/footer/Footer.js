@@ -7,19 +7,22 @@ const Footer = () => {
     <div id="footerContainer">
       <ul id="footerLinks">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/blog">Home</Link>
         </li>
         <li>
-          <Link to="/blog">Posts</Link>
+          <Link to="/bloglist">Posts</Link>
         </li>
         <li>
-          <Link to="/tips">Tips</Link>
+          <Link to="/Snippets">Snippets</Link>
         </li>
         <li>
           <Link to="/">Portfolio</Link>
         </li>
         <li>
           <Link to="/">About</Link>
+        </li>
+        <li>
+          <Link to="/">Subscribe</Link>
         </li>
       </ul>
       <p className="copyRight">
