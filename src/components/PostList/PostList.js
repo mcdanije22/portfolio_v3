@@ -10,8 +10,8 @@ const PostList = ({ blogPosts }) => {
           console.log(post)
           return (
             <li className="post" key={i}>
-              <h4>{post.node.frontmatter.title}</h4>
-              <h5>{post.node.frontmatter.subtitle}</h5>
+              <h1>{post.node.frontmatter.title}</h1>
+              <h2>{post.node.frontmatter.subtitle}</h2>
               <p>{post.node.excerpt}...</p>
               <Link to={`${post.node.frontmatter.slug}`}>Read more</Link>
             </li>

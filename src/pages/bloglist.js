@@ -33,8 +33,8 @@ const BlogList = () => {
         <Col xs={24} lg={12}>
           <div id="blogListContainer">
             <div id="blogPostHeader">
-              <h1>Latest</h1>
-              <h3>All of the latest post</h3>
+              <h5>Latest</h5>
+              <h4>All of the latest post</h4>
               <hr />
             </div>
             <PostList blogPosts={blogPosts.allMarkdownRemark.edges} />

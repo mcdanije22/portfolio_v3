@@ -70,10 +70,10 @@ const Blog = () => {
               </ul>
             </div> */}
             <div id="blogContainer" className="container">
-              <h1>Recently Posted</h1>
+              <h5>Recently Posted</h5>
               <PostList blogPosts={blogPosts.allMarkdownRemark.edges} />
               <Link to="/bloglist">
-                <h4 id="viewAllOption">View all</h4>
+                <p id="viewAllOption">View all</p>
               </Link>
             </div>
           </Col>
@@ -86,7 +86,7 @@ const Blog = () => {
               commonly used to demonstrate the visual form of a document
             </p> */}
             <div className="container">
-              <h1>Popular Categories</h1>
+              <h5>Popular Categories</h5>
               <ul>
                 <li>
                   <Link to="/">
@@ -113,7 +113,7 @@ const Blog = () => {
           </Col>
           <Col xs={{ span: 24 }} lg={{ span: 16 }}>
             <div id="newsletterSection" className="container">
-              <h1>Get Notified</h1>
+              <h5>Get Notified</h5>
               <label>
                 <p>Join the Newsletter for Exclusive content </p>
               </label>

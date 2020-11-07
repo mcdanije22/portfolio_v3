@@ -21,7 +21,7 @@ export default function Template({ data }) {
             <div className="blogPostContainer">
               <div id="postInfo">
                 <h1>{frontmatter.title}</h1>
-                <h3>{frontmatter.subtitle}</h3>
+                <h2>{frontmatter.subtitle}</h2>
               </div>
               <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />
               <div

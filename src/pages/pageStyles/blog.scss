@@ -35,13 +35,16 @@ $desktop: 1024px;
 .container {
   margin-bottom: 4rem;
 }
-#landingPageContainer main h1 {
+#landingPageContainer main h5 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   color: #ec5131;
 }
 #viewAllOption {
   margin-top: 2rem;
+}
+#newsletterSection {
+  max-width: 420px;
 }
 @include desktop {
   #landingPageContainer main {
@@ -77,9 +80,8 @@ $desktop: 1024px;
     font-size: 1.5rem;
   }
   #newsletterSection {
-    max-width: 500px;
     p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
 }

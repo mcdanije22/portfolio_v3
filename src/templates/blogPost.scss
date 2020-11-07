@@ -8,6 +8,14 @@ $desktop: 1024px;
   max-width: 500px;
   margin: 0 auto;
   margin: 2rem 0;
+  #postInfo {
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
   .blogPostContent {
     margin: 1rem 0;
   }
@@ -18,6 +26,7 @@ $desktop: 1024px;
   }
   .blogPostContainer {
     max-width: 800px;
+
     .blogPostContent {
       font-size: 1rem;
     }
