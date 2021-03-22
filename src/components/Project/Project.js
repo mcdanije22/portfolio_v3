@@ -10,6 +10,7 @@ const Project = ({
   codeLink,
   liveLink,
   side,
+  isPrivate,
 }) => {
   return (
     <div
@@ -35,9 +36,14 @@ const Project = ({
         <h5>{tech}</h5>
         <p>{description}</p>
         <div className="projectButtons">
-          <a href={codeLink} target="_blank">
-            <button className="leftButton">Code</button>
-          </a>
+          {isPrivate ? (
+            <button className="leftButton">Private repo</button>
+          ) : (
+            <a href={codeLink} target="_blank">
+              <button className="leftButton">Code</button>
+            </a>
+          )}
+
           <a href={liveLink} target="_blank">
             <button className="rightButton">Live</button>
           </a>

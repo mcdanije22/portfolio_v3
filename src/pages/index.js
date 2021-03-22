@@ -197,10 +197,11 @@ const IndexPage = () => {
             title="Plan Code"
             img={data.plan_code.childImageSharp.fluid}
             tech="HTML | CSS | TypeScript | Next js/ React js | Context API | Node js | MongoDB"
-            description="An all-in-one solution that lets users efficiently plan their next code project. This application helps users fully plan out specific goals for what to accomplish by creating: feature wishlist, saving sites and images that inspire the project and, the ability to save blocks of code that will be helpful for later.  Use email: john.smith@gmail.com and password: abc as a test account or the live demo button. Mobile-first design patterns."
+            description="An all-in-one solution that lets users efficiently plan their next code project. This application helps users fully plan out specific goals for what to accomplish by creating: feature wishlist, saving sites and images that inspire the project and, the ability to save blocks of code that will be helpful for later.  Use email: john.smith@gmail.com and password: abc as a test account or the live demo button. Mobile-first design patterns. Ask for the private repo for more details!"
             codeLink="https://project-planning-app.vercel.app/"
             liveLink="https://project-planning-app.vercel.app/"
             side="left"
+            isPrivate={true}
           />
           <Project
             title="Macros"
@@ -210,6 +211,7 @@ const IndexPage = () => {
             codeLink="https://github.com/mcdanije22/macros"
             liveLink="https://macros-social.herokuapp.com/"
             side="right"
+            isPrivate={false}
           />
           <Project
             title="Turtle Leaf Cafe"
@@ -219,6 +221,7 @@ const IndexPage = () => {
             codeLink="https://github.com/mcdanije22/turtle_leaf"
             liveLink="https://cocky-chandrasekhar-6305e3.netlify.app/"
             side="left"
+            isPrivate={false}
           />
           <Project
             title="The Nerd Store"
@@ -228,6 +231,7 @@ const IndexPage = () => {
             codeLink="https://github.com/mcdanije22/nerd_store"
             liveLink="https://relaxed-dijkstra-2f24bd.netlify.com/"
             side="right"
+            isPrivate={false}
           />
           <Project
             title="Phonelab"
@@ -237,6 +241,7 @@ const IndexPage = () => {
             codeLink="https://github.com/mcdanije22/ecommerce_phones"
             liveLink="https://ecommerce-phonelab.herokuapp.com/"
             side="left"
+            isPrivate={false}
           />
           <Project
             title="Contacts"
@@ -246,6 +251,7 @@ const IndexPage = () => {
             codeLink="https://github.com/mcdanije22/new_contact_app'"
             liveLink="https://contact-application-new.herokuapp.com/"
             side="right"
+            isPrivate={false}
           />
         </div>
       </div>
