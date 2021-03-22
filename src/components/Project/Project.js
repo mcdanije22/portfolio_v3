@@ -37,7 +37,9 @@ const Project = ({
         <p>{description}</p>
         <div className="projectButtons">
           {isPrivate ? (
-            <button className="leftButton">Private repo</button>
+            <button className="leftButton" style={{ cursor: " not-allowed" }}>
+              Private repo
+            </button>
           ) : (
             <a href={codeLink} target="_blank">
               <button className="leftButton">Code</button>

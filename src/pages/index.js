@@ -93,10 +93,12 @@ const IndexPage = () => {
               </h1>
               <h3>Full-Stack Developer</h3>
               <a
-                href="https://drive.google.com/file/d/11uWDnXEIVM3N3JeBbtLdgKeDbF-ZlQ9z/view"
+                href="https://docs.google.com/document/d/152CQpyXqk7SMzE0S33KPApynDclfotqY73EGo7NuCFU/edit?usp=sharing"
                 target="_blank"
               >
-                <button type="submit">Resume</button>
+                <button type="submit" style={{ cursor: "pointer" }}>
+                  Resume
+                </button>
               </a>
             </div>
             <div id="rightSideHero" style={{ display: "none" }}>
@@ -128,6 +130,7 @@ const IndexPage = () => {
                       textAlign: "center",
                       display: "inline-block",
                       verticalAlign: "middle",
+                      cursor: "pointer",
                     }}
                   />
                 </button>
@@ -153,6 +156,7 @@ const IndexPage = () => {
                       textAlign: "center",
                       display: "inline-block",
                       verticalAlign: "middle",
+                      cursor: "pointer",
                     }}
                   />
                 </button>
@@ -178,6 +182,7 @@ const IndexPage = () => {
                       textAlign: "center",
                       display: "inline-block",
                       verticalAlign: "middle",
+                      cursor: "pointer",
                     }}
                   />
                 </button>
@@ -196,7 +201,7 @@ const IndexPage = () => {
           <Project
             title="Plan Code"
             img={data.plan_code.childImageSharp.fluid}
-            tech="HTML | CSS | TypeScript | Next js/ React js | Context API | Node js | MongoDB"
+            tech="HTML | Sass | TypeScript | Next js/ React js | Context API | Node js | MongoDB"
             description="An all-in-one solution that lets users efficiently plan their next code project. This application helps users fully plan out specific goals for what to accomplish by creating: feature wishlist, saving sites and images that inspire the project and, the ability to save blocks of code that will be helpful for later.  Use email: john.smith@gmail.com and password: abc as a test account or the live demo button. Mobile-first design patterns. Ask for the private repo for more details!"
             codeLink="https://project-planning-app.vercel.app/"
             liveLink="https://project-planning-app.vercel.app/"
