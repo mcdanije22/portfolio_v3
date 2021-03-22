@@ -24,6 +24,13 @@ const IndexPage = () => {
           }
         }
       }
+      plan_code: file(relativePath: { eq: "plan_code.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       macros: file(relativePath: { eq: "macros.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -187,13 +194,22 @@ const IndexPage = () => {
         </div>
         <div id="projectList">
           <Project
+            title="Plan Code"
+            img={data.plan_code.childImageSharp.fluid}
+            tech="HTML | CSS | TypeScript | Next js/ React js | Context API | Node js | MongoDB"
+            description="An all-in-one solution that lets users efficiently plan their next code project. This application helps users fully plan out specific goals for what to accomplish by creating: feature wishlist, saving sites and images that inspire the project and, the ability to save blocks of code that will be helpful for later.  Use email: john.smith@gmail.com and password: abc as a test account or the live demo button. Mobile-first design patterns."
+            codeLink="https://project-planning-app.vercel.app/"
+            liveLink="https://project-planning-app.vercel.app/"
+            side="left"
+          />
+          <Project
             title="Macros"
             img={data.macros.childImageSharp.fluid}
             tech="HTML | CSS | TypeScript | Next js/ React js | Context API | Node js | MongoDB"
             description="A web application that lets users create, find, and share macro-friendly meals with friends. Creating a food post lets a user upload an image as well as the ability to search a food database for ingredients to easily attach nutrition values to the post. Use email: test@gmail.com and password: 12345678 as a test account. Mobile-first design patterns."
             codeLink="https://github.com/mcdanije22/macros"
             liveLink="https://macros-social.herokuapp.com/"
-            side="left"
+            side="right"
           />
           <Project
             title="Turtle Leaf Cafe"
@@ -202,7 +218,7 @@ const IndexPage = () => {
             description="A complete re-build of a website for a local cafe that was previously using Wix. Rebuilt using Gatsby js to greatly increase performance, speed and, SEO. Its purpose was to generate new web traffic for the cafe and create a much better user experience with a more modern design than previously. Ability to provided users with up to date news info and a look into the cafe. Mobile-first design patterns to provide the best views on any device size. "
             codeLink="https://github.com/mcdanije22/turtle_leaf"
             liveLink="https://cocky-chandrasekhar-6305e3.netlify.app/"
-            side="right"
+            side="left"
           />
           <Project
             title="The Nerd Store"
@@ -211,7 +227,7 @@ const IndexPage = () => {
             description="A web application that was created to be highly responsive, fast and, optimized for SEO using Gatsby js. This was utilized to increase the traffic of a local gaming shop. Created using a headless cms, Contentful, for easy event editing and focusing on quick user accessibility. Provided users with access to shop event info, twitter announcements, photos, and contact/message abilities. Mobile-first design patterns."
             codeLink="https://github.com/mcdanije22/nerd_store"
             liveLink="https://relaxed-dijkstra-2f24bd.netlify.com/"
-            side="left"
+            side="right"
           />
           <Project
             title="Phonelab"
@@ -220,7 +236,7 @@ const IndexPage = () => {
             description="A web application that lets customers shop and purchase smartphone and smartphone accessories. Customers will create accounts, manage addresses and payment options, edit their shopping carts, complete orders and manage their account. Use email:test and password: abc as a test account. Mobile-first design patterns."
             codeLink="https://github.com/mcdanije22/ecommerce_phones"
             liveLink="https://ecommerce-phonelab.herokuapp.com/"
-            side="right"
+            side="left"
           />
           <Project
             title="Contacts"
@@ -229,7 +245,7 @@ const IndexPage = () => {
             description="A web application that lets users create, edit and delete contacts from their contact list. The contact list is carried from session to session after reloads utilizing user's local storage. Users can star their favorite contacts and quickly search for specific contacts. Mobile-first design patterns."
             codeLink="https://github.com/mcdanije22/new_contact_app'"
             liveLink="https://contact-application-new.herokuapp.com/"
-            side="left"
+            side="right"
           />
         </div>
       </div>
